@@ -1,5 +1,23 @@
 # Sky Theme UI Redesign Spec (Iteration 1)
 
+## Iteration update: Start Screen landing refresh
+
+### What changed
+- Upgraded `StartScreen.razor` into a two-card landing layout:
+  - **Hero card** with title, short value proposition, and primary CTA.
+  - **How it works card** with 3 concise onboarding steps.
+- Kept `OnStart` callback wiring unchanged (`@onclick="OnStart"`).
+- Reused existing utility classes and sky tokens (no gameplay logic or flow changes).
+
+### Design rationale
+- **Entry-first clarity:** users now get a clear “why play” message before instructions.
+- **Stronger action hierarchy:** primary CTA placed inside hero card for immediate start.
+- **Digestible onboarding:** three numbered steps improve scanability on mobile.
+- **Theme consistency:** white cards, sky shadow, and muted blue text preserve current Sky Theme.
+
+### Notes
+- No new CSS utilities were required for this iteration.
+
 ## Goal
 Apply a light “Sky Theme” to existing screens **without changing component logic**, only class usage and utility tokens.
 
